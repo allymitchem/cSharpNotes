@@ -71,3 +71,29 @@ class Program
         Console.ReadLine();
     }
 }
+
+
+// ---STRINGS---
+
+// \n => special character that specifies new line
+// Console.WriteLine("Giraffe\nAcademy");
+
+// store string in a variable
+// string phrase = "Giraffe Academy";
+//Console.WriteLine(phrase);
+
+// concatination => "" + ""
+
+// phrase.Length (will tell how many characters in string of phrase above)
+// methods will be discussed later => modify or performs task for string
+// Contains method to check for parameters (true or false value)
+// phrase[] => to find character at certain index
+// .Index.Of() => at what index position parameter starts at
+// if only putting a character in parameters, just use '' => ie 'f'
+// if prints out -1 => character does not exist inside of string
+
+// .Substring() => allows you to grab a part of the string
+// give substring one parameter => index 
+// give two parameters => (8, 3 ) =>starting index and how many characters
+
+
