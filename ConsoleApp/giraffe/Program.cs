@@ -54,23 +54,23 @@
 
 //--- DATA TYPES ---
 
-namespace giraffe;
-class Program
-{
-    static void Main(string[] args)
-    {
-        string phrase = "Giraffe Academy";
-        //for characters, can only use single character
-        char grade = 'A';
-        int age = 30; //can be whole or negative numbers, as well as decimals
-        float, double, decimal //least accurate to most accurate with decimals
-        double gpa = 3.2;
-         // boolean => [true or false value]
-        bool isMale = true; 
+// namespace giraffe;
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         string phrase = "Giraffe Academy";
+//         //for characters, can only use single character
+//         char grade = 'A';
+//         int age = 30; //can be whole or negative numbers, as well as decimals
+//         float, double, decimal //least accurate to most accurate with decimals
+//         double gpa = 3.2;
+//          // boolean => [true or false value]
+//         bool isMale = true; 
         
-        Console.ReadLine();
-    }
-}
+//         Console.ReadLine();
+//     }
+// }
 
 
 // ---STRINGS---
@@ -108,3 +108,25 @@ class Program
 // Math.Max(,) => tells which number is bigger
 // Math.Min(,) => which number is smaller
 // Math.Round() => rounds numbers
+
+
+//---GETTING USER INPUT---
+// allowing user to type in value, then using value to do something
+
+namespace giraffe;
+class Program
+{
+    static void Main(string[] args)
+    {
+    //    use Write instead of WriteLine to go onto a new line. 
+        Console.Write("Enter your name: ");
+        string name = Console.ReadLine();
+        Console.Write("Enter your age: ");
+        string age = Console.ReadLine();
+        Console.WriteLine("Hello " + name + " you are " + age);
+
+        
+        // ReadLine essentially pauses and waits for user input
+        Console.ReadLine();
+    }
+}
