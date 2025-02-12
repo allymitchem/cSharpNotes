@@ -96,4 +96,15 @@ class Program
 // give substring one parameter => index 
 // give two parameters => (8, 3 ) =>starting index and how many characters
 
+// ---Numbers---
+// C# does distinguish between whole numbers and decimals
+// math operations: +, -, /, *, %  (modulus => gives remainder of division operation)
+// order of operations
 
+// Math. => math operations
+// Math.Abs() => absolute value
+// Math.Pow(,) => first parameter raised to the second parameter
+// Math.Sqrt() => square root
+// Math.Max(,) => tells which number is bigger
+// Math.Min(,) => which number is smaller
+// Math.Round() => rounds numbers
