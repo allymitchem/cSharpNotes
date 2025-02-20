@@ -133,27 +133,54 @@
 
 // ---BUILDING A CALCULATOR---
 
-using System.Data.SqlTypes;
+// using System.Data.SqlTypes;
+
+// namespace giraffe;
+// class Program 
+// {
+//     static void Main(string[] args)
+//     {
+//         // convert string into numbers
+
+//         // int num = Convert.ToInt32("45");
+//         // Console.WriteLine(num + 6);
+
+//         // if wanting to use decimals, use double instead of int for variable ***
+
+//         Console.Write("Enter a number: ");
+//         int num1 = Convert.ToInt32(Console.ReadLine());
+//         Console.Write("Enter another number: ");
+//         int num2 = Convert.ToInt32(Console.ReadLine());
+
+//         Console.WriteLine(num1 + num2);
+
+//         Console.ReadLine();
+//     }
+// }
+
+// ---BUILDING MAD LIBS GAME---
 
 namespace giraffe;
-class Program 
-{
-    static void Main(string[] args)
+
+    class Program
     {
-        // convert string into numbers
+        static void Main(string[] args)
+        {
+            string color, pluralNoun, celebrity;
 
-        // int num = Convert.ToInt32("45");
-        // Console.WriteLine(num + 6);
+            Console.Write("Enter a color: ");
+            color = Console.ReadLine();
 
-        // if wanting to use decimals, use double instead of int for variable ***
+            Console.Write("Enter a plural noun: ");
+            pluralNoun = Console.ReadLine();
 
-        Console.Write("Enter a number: ");
-        int num1 = Convert.ToInt32(Console.ReadLine());
-        Console.Write("Enter another number: ");
-        int num2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter a celebrity: ");
+            celebrity = Console.ReadLine();
 
-        Console.WriteLine(num1 + num2);
+            Console.WriteLine("Roses are " + color);
+            Console.WriteLine(pluralNoun + " are blue");
+            Console.WriteLine("I love " + celebrity);
 
-        Console.ReadLine();
+            Console.ReadLine();
+        }
     }
-}
