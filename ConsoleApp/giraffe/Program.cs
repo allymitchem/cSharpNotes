@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
- 
- // ----DRAWING A SHAPE---
+
+// ----DRAWING A SHAPE---
 
 //  namespace giraffe;
 //     class Program
@@ -39,7 +39,7 @@
 
 //         Console.WriteLine("There once was a man named " + characterName);
 //         Console.WriteLine("He was " + characterAge + " years old");
-        
+
 //         //updating value halfway through
 //         characterName = "Mike";
 
@@ -67,7 +67,7 @@
 //         double gpa = 3.2;
 //          // boolean => [true or false value]
 //         bool isMale = true; 
-        
+
 //         Console.ReadLine();
 //     }
 // }
@@ -113,20 +113,47 @@
 //---GETTING USER INPUT---
 // allowing user to type in value, then using value to do something
 
+// namespace giraffe;
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//     //    use Write instead of WriteLine to go onto a new line. 
+//         Console.Write("Enter your name: ");
+//         string name = Console.ReadLine();
+//         Console.Write("Enter your age: ");
+//         string age = Console.ReadLine();
+//         Console.WriteLine("Hello " + name + " you are " + age);
+
+
+//         // ReadLine essentially pauses and waits for user input
+//         Console.ReadLine();
+//     }
+// }
+
+// ---BUILDING A CALCULATOR---
+
+using System.Data.SqlTypes;
+
 namespace giraffe;
-class Program
+class Program 
 {
     static void Main(string[] args)
     {
-    //    use Write instead of WriteLine to go onto a new line. 
-        Console.Write("Enter your name: ");
-        string name = Console.ReadLine();
-        Console.Write("Enter your age: ");
-        string age = Console.ReadLine();
-        Console.WriteLine("Hello " + name + " you are " + age);
+        // convert string into numbers
 
-        
-        // ReadLine essentially pauses and waits for user input
+        // int num = Convert.ToInt32("45");
+        // Console.WriteLine(num + 6);
+
+        // if wanting to use decimals, use double instead of int for variable ***
+
+        Console.Write("Enter a number: ");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter another number: ");
+        int num2 = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine(num1 + num2);
+
         Console.ReadLine();
     }
 }
