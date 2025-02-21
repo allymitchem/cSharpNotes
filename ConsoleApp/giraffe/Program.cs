@@ -188,26 +188,49 @@
 
 // ----Arrays----
 
+// namespace giraffe;
+
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             // have to tell c# we're making an array instead of a variable by using []. Prior to the [], we need to specify what data type it is going to include
+
+//             int [] luckyNumbers = { 4, 8, 15, 16, 23, 42};
+
+//             // luckyNumbers[1] = 900;
+//             string[] friends = new string[5];
+//             //                             ^this means the array can only hold 10 items
+//             friends[0] = "Jim";
+//             friends[1] = "Kelly";
+//             // ^ manually setting the value of each index
+            
+
+//             Console.WriteLine( luckyNumbers[1] );
+
+//             Console.ReadLine();
+//         }
+//     }
+
+// ---Methods---
+
 namespace giraffe;
 
     class Program
     {
-        static void Main(string[] args)
+        // static void Main is a method
+        static void Main(string[] args) 
         {
-            // have to tell c# we're making an array instead of a variable by using []. Prior to the [], we need to specify what data type it is going to include
-
-            int [] luckyNumbers = { 4, 8, 15, 16, 23, 42};
-
-            // luckyNumbers[1] = 900;
-            string[] friends = new string[5];
-            //                             ^this means the array can only hold 10 items
-            friends[0] = "Jim";
-            friends[1] = "Kelly";
-            // ^ manually setting the value of each index
-            
-
-            Console.WriteLine( luckyNumbers[1] );
-
+            SayHi("Mike", 33);
+            SayHi("John", 56);
+            SayHi("Tom", 12);
             Console.ReadLine();
+        }
+        // come outside of the static void method brackets for new method. void doesn't return any information
+        // naming convention for methods is Capitals
+        static void SayHi(string name, int age)
+        {
+            Console.WriteLine("Hello " + name + " you are " + age);
+            // line of code wasn't executed because it wasn't ran. Only the code inside the main method gets ran. You can call the method though in Main.
         }
     }
