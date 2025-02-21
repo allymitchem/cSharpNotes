@@ -160,26 +160,53 @@
 
 // ---BUILDING MAD LIBS GAME---
 
+// namespace giraffe;
+
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             string color, pluralNoun, celebrity;
+
+//             Console.Write("Enter a color: ");
+//             color = Console.ReadLine();
+
+//             Console.Write("Enter a plural noun: ");
+//             pluralNoun = Console.ReadLine();
+
+//             Console.Write("Enter a celebrity: ");
+//             celebrity = Console.ReadLine();
+
+//             Console.WriteLine("Roses are " + color);
+//             Console.WriteLine(pluralNoun + " are blue");
+//             Console.WriteLine("I love " + celebrity);
+
+//             Console.ReadLine();
+//         }
+//     }
+
+
+// ----Arrays----
+
 namespace giraffe;
 
     class Program
     {
         static void Main(string[] args)
         {
-            string color, pluralNoun, celebrity;
+            // have to tell c# we're making an array instead of a variable by using []. Prior to the [], we need to specify what data type it is going to include
 
-            Console.Write("Enter a color: ");
-            color = Console.ReadLine();
+            int [] luckyNumbers = { 4, 8, 15, 16, 23, 42};
 
-            Console.Write("Enter a plural noun: ");
-            pluralNoun = Console.ReadLine();
+            // luckyNumbers[1] = 900;
+            string[] friends = new string[5];
+            //                             ^this means the array can only hold 10 items
+            friends[0] = "Jim";
+            friends[1] = "Kelly";
+            // ^ manually setting the value of each index
+            
 
-            Console.Write("Enter a celebrity: ");
-            celebrity = Console.ReadLine();
-
-            Console.WriteLine("Roses are " + color);
-            Console.WriteLine(pluralNoun + " are blue");
-            Console.WriteLine("I love " + celebrity);
+            Console.WriteLine( luckyNumbers[1] );
 
             Console.ReadLine();
         }
