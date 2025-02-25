@@ -214,23 +214,48 @@
 
 // ---Methods---
 
-namespace giraffe;
+// namespace giraffe;
 
+//     class Program
+//     {
+//         // static void Main is a method
+//         static void Main(string[] args) 
+//         {
+//             SayHi("Mike", 33);
+//             SayHi("John", 56);
+//             SayHi("Tom", 12);
+//             Console.ReadLine();
+//         }
+//         // come outside of the static void method brackets for new method. void doesn't return any information
+//         // naming convention for methods is Capitals
+//         static void SayHi(string name, int age)
+//         {
+//             Console.WriteLine("Hello " + name + " you are " + age);
+//             // line of code wasn't executed because it wasn't ran. Only the code inside the main method gets ran. You can call the method though in Main.
+//         }
+//     }
+
+
+// ----RETURN STATEMENTS----
+
+namespace giraffe;
     class Program
     {
-        // static void Main is a method
-        static void Main(string[] args) 
+        static void Main(string[] args)
         {
-            SayHi("Mike", 33);
-            SayHi("John", 56);
-            SayHi("Tom", 12);
+            // int cubedNumber = cube(5);
+            // Console.WriteLine(cubedNumber);
+           Console.WriteLine(cube(5));
+
             Console.ReadLine();
         }
-        // come outside of the static void method brackets for new method. void doesn't return any information
-        // naming convention for methods is Capitals
-        static void SayHi(string name, int age)
+
+        // want to cube a number and return it
+        // create method outside of Main, and then call it in Main => make sure to write line to print it out
+        static int cube(int num)
         {
-            Console.WriteLine("Hello " + name + " you are " + age);
-            // line of code wasn't executed because it wasn't ran. Only the code inside the main method gets ran. You can call the method though in Main.
+            int result = num * num * num;
+            return result;
         }
+
     }
