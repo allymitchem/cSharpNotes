@@ -269,57 +269,95 @@
 // else if (){} => check another condition after "if" before just "else"
 // ! (negation operator) => negates the condition
 
+// namespace giraffe;
+
+// class Program
+// {
+//     static void Main()
+//     {
+//         int number = 10;
+
+//         if (number > 5)
+//         {
+//             Console.WriteLine("Number is greater than 5");
+//         }
+//     }
+// }
+
+// namespace giraffe;
+
+// class Program
+// {
+//     static void CheckNumber(int number)
+//     {
+//         if (number > 5)
+//         {
+//             Console.WriteLine("Number is greater than 5");
+//         }
+//         else
+//         {
+//             Console.WriteLine("Number is 5 or less");
+//         }
+//     }
+
+//     static void Main()
+//     {
+//         CheckNumber(10); // Calling the method from Main
+//     }
+// }
+
+// // ----IF STATEMENTS => Comparisons----
+
+// // max method => tells which number is bigger
+// // == comparing the value
+// // != not equal to
+// static int GetMax(int num1, int num2)
+// {
+//     int result;
+//     if (num1 > num2) {
+//         result = num1;
+//     }
+//     else {
+//         result = num2;
+//     }
+
+//     return result;
+// }
+
+// ---BUILDING A BETTER CALCULATOR---
+
+// **building a four function calculator
+
 namespace giraffe;
 
-class Program
-{
-    static void Main()
+    class Program 
     {
-        int number = 10;
-
-        if (number > 5)
+        static void Main()
         {
-            Console.WriteLine("Number is greater than 5");
+            Console.Write("Enter a number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter operator: ");
+            string op = Console.ReadLine();
+
+            Console.Write("Enter a number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            if(op == "+"){
+                Console.WriteLine(num1 + num2);
+            } else if (op == "-"){
+                Console.WriteLine(num1 - num2);
+            }
+            else if (op == "/"){
+                Console.WriteLine(num1 / num2);
+            }
+            else if (op == "*"){
+                Console.WriteLine(num1 * num2);
+            }
+            else {
+                Console.WriteLine("Invalid operator");
+            }
+
+            Console.ReadLine();
         }
     }
-}
-
-namespace giraffe;
-
-class Program
-{
-    static void CheckNumber(int number)
-    {
-        if (number > 5)
-        {
-            Console.WriteLine("Number is greater than 5");
-        }
-        else
-        {
-            Console.WriteLine("Number is 5 or less");
-        }
-    }
-
-    static void Main()
-    {
-        CheckNumber(10); // Calling the method from Main
-    }
-}
-
-// ----IF STATEMENTS => Comparisons----
-
-// max method => tells which number is bigger
-// == comparing the value
-// != not equal to
-static int GetMax(int num1, int num2)
-{
-    int result;
-    if (num1 > num2) {
-        result = num1;
-    }
-    else {
-        result = num2;
-    }
-
-    return result;
-}
