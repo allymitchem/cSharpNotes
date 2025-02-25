@@ -238,24 +238,70 @@
 
 // ----RETURN STATEMENTS----
 
+// namespace giraffe;
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             // int cubedNumber = cube(5);
+//             // Console.WriteLine(cubedNumber);
+//            Console.WriteLine(cube(5));
+
+//             Console.ReadLine();
+//         }
+
+//         // want to cube a number and return it
+//         // create method outside of Main, and then call it in Main => make sure to write line to print it out
+//         static int cube(int num)
+//         {
+//             int result = num * num * num;
+//             return result;
+//         }
+
+//     }
+
+// ----IF STATEMENTS----
+
+// ** if statements are typically used within the Main method (or any other method) because they need to be executed as part of the program's logic
+
+// && (and operator) is the same in C# as it is in JavaScript
+// || (or operator) same as well
+// else if (){} => check another condition after "if" before just "else"
+// ! (negation operator) => negates the condition
+
 namespace giraffe;
-    class Program
+
+class Program
+{
+    static void Main()
     {
-        static void Main(string[] args)
+        int number = 10;
+
+        if (number > 5)
         {
-            // int cubedNumber = cube(5);
-            // Console.WriteLine(cubedNumber);
-           Console.WriteLine(cube(5));
-
-            Console.ReadLine();
+            Console.WriteLine("Number is greater than 5");
         }
-
-        // want to cube a number and return it
-        // create method outside of Main, and then call it in Main => make sure to write line to print it out
-        static int cube(int num)
-        {
-            int result = num * num * num;
-            return result;
-        }
-
     }
+}
+
+namespace giraffe;
+
+class Program
+{
+    static void CheckNumber(int number)
+    {
+        if (number > 5)
+        {
+            Console.WriteLine("Number is greater than 5");
+        }
+        else
+        {
+            Console.WriteLine("Number is 5 or less");
+        }
+    }
+
+    static void Main()
+    {
+        CheckNumber(10); // Calling the method from Main
+    }
+}
