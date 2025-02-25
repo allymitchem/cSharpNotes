@@ -368,48 +368,77 @@
 // check if statements efficiently => less messy
 
 
-namespace giraffe;
+// namespace giraffe;
 
-class Program{
-    static void Main(string[] args)
-    {
+// class Program{
+//     static void Main(string[] args)
+//     {
 
-        Console.WriteLine(GetDay(80));
-        Console.ReadLine();
-    }
-    static string GetDay(int dayNum){
-        string dayName;
+//         Console.WriteLine(GetDay(80));
+//         Console.ReadLine();
+//     }
+//     static string GetDay(int dayNum){
+//         string dayName;
         
-        switch (dayNum)
-        {
-            case 0:
-                dayName = "Sunday";
-                break;
-            case 1:
-                dayName = "Monday";
-                break;
-            case 2:
-                dayName = "Tuesday";
-                break;
-            case 3:
-                dayName = "Wednesday";
-                break;
-            case 4:
-                dayName = "Thursday";
-                break;
-            case 5:
-                dayName = "Friday";
-                break;
-            case 6:
-                dayName = "Saturday";
-                break;
-            default: //if none of the cases are met
-                dayName = "Invalid day number";
-                break;
+//         switch (dayNum)
+//         {
+//             case 0:
+//                 dayName = "Sunday";
+//                 break;
+//             case 1:
+//                 dayName = "Monday";
+//                 break;
+//             case 2:
+//                 dayName = "Tuesday";
+//                 break;
+//             case 3:
+//                 dayName = "Wednesday";
+//                 break;
+//             case 4:
+//                 dayName = "Thursday";
+//                 break;
+//             case 5:
+//                 dayName = "Friday";
+//                 break;
+//             case 6:
+//                 dayName = "Saturday";
+//                 break;
+//             default: //if none of the cases are met
+//                 dayName = "Invalid day number";
+//                 break;
             
                 
-        }
+//         }
 
-        return dayName;
+//         return dayName;
+//     }
+// }
+
+// ---WHILE LOOPS---
+
+// continue to loop through while conditions are met
+// make sure not to loop indefinitely => make sure condition is false at some point
+
+namespace giraffe;
+
+    class Program 
+    {
+        static void Main(string[] args)
+        {
+            int index = 1;
+            while ( index <= 5)
+            {
+               Console.WriteLine(index);
+                index++; //increments until = 5 (condition <= 5 )
+            }
+
+            Console.ReadLine();
+        }
     }
-}
+
+    // do while loop will execute code until it reads the condition and sees it's false
+    // do
+    // {
+    //     Console.WriteLine(index);
+    //     index++;
+    // } while (Index <= 5);
