@@ -305,3 +305,21 @@ class Program
         CheckNumber(10); // Calling the method from Main
     }
 }
+
+// ----IF STATEMENTS => Comparisons----
+
+// max method => tells which number is bigger
+// == comparing the value
+// != not equal to
+static int GetMax(int num1, int num2)
+{
+    int result;
+    if (num1 > num2) {
+        result = num1;
+    }
+    else {
+        result = num2;
+    }
+
+    return result;
+}
