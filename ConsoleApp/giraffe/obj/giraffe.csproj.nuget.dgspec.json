@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/allysonmitchem/Desktop/c#/ConsoleApp/giraffe/giraffe.csproj": {}
+    "/Users/allysonmitchem/Desktop/cSharpNotes/ConsoleApp/giraffe/giraffe.csproj": {}
   },
   "projects": {
-    "/Users/allysonmitchem/Desktop/c#/ConsoleApp/giraffe/giraffe.csproj": {
+    "/Users/allysonmitchem/Desktop/cSharpNotes/ConsoleApp/giraffe/giraffe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/allysonmitchem/Desktop/c#/ConsoleApp/giraffe/giraffe.csproj",
+        "projectUniqueName": "/Users/allysonmitchem/Desktop/cSharpNotes/ConsoleApp/giraffe/giraffe.csproj",
         "projectName": "giraffe",
-        "projectPath": "/Users/allysonmitchem/Desktop/c#/ConsoleApp/giraffe/giraffe.csproj",
+        "projectPath": "/Users/allysonmitchem/Desktop/cSharpNotes/ConsoleApp/giraffe/giraffe.csproj",
         "packagesPath": "/Users/allysonmitchem/.nuget/packages/",
-        "outputPath": "/Users/allysonmitchem/Desktop/c#/ConsoleApp/giraffe/obj/",
+        "outputPath": "/Users/allysonmitchem/Desktop/cSharpNotes/ConsoleApp/giraffe/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/allysonmitchem/.nuget/NuGet/NuGet.Config"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
