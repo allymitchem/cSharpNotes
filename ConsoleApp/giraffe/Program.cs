@@ -419,22 +419,22 @@
 // continue to loop through while conditions are met
 // make sure not to loop indefinitely => make sure condition is false at some point
 
-namespace giraffe;
+// namespace giraffe;
 
-    class Program 
-    {
-        static void Main(string[] args)
-        {
-            int index = 1;
-            while ( index <= 5)
-            {
-               Console.WriteLine(index);
-                index++; //increments until = 5 (condition <= 5 )
-            }
+//     class Program 
+//     {
+//         static void Main(string[] args)
+//         {
+//             int index = 1;
+//             while ( index <= 5)
+//             {
+//                Console.WriteLine(index);
+//                 index++; //increments until = 5 (condition <= 5 )
+//             }
 
-            Console.ReadLine();
-        }
-    }
+//             Console.ReadLine();
+//         }
+//     }
 
     // do while loop will execute code until it reads the condition and sees it's false
     // do
@@ -442,3 +442,41 @@ namespace giraffe;
     //     Console.WriteLine(index);
     //     index++;
     // } while (Index <= 5);
+
+
+// ---BUILDING A GUESSING GAME---
+
+namespace giraffe;
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string secretWord = "giraffe";
+            string guess = "";
+            int guessCount = 0;
+            int guessLimit = 3;
+            bool outOfGuesses = false;
+
+            while(guess != secretWord && !outOfGuesses)
+            {
+                if(guessCount < guessLimit)
+                {
+                    Console.Write("Enter guess: ");
+                    guess = Console.ReadLine();
+                    guessCount++;
+                } else {
+                    outOfGuesses = true;
+                }
+            }
+            if (outOfGuesses){
+                Console.WriteLine("You Lose!");
+            } else{
+
+            
+            Console.Write("You Win!");
+            }
+            Console.ReadLine();
+
+        }
+    }
