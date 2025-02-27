@@ -446,37 +446,59 @@
 
 // ---BUILDING A GUESSING GAME---
 
-namespace giraffe;
+// namespace giraffe;
 
-    class Program
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             string secretWord = "giraffe";
+//             string guess = "";
+//             int guessCount = 0;
+//             int guessLimit = 3;
+//             bool outOfGuesses = false;
+
+//             while(guess != secretWord && !outOfGuesses)
+//             {
+//                 if(guessCount < guessLimit)
+//                 {
+//                     Console.Write("Enter guess: ");
+//                     guess = Console.ReadLine();
+//                     guessCount++;
+//                 } else {
+//                     outOfGuesses = true;
+//                 }
+//             }
+//             if (outOfGuesses){
+//                 Console.WriteLine("You Lose!");
+//             } else{
+
+            
+//             Console.Write("You Win!");
+//             }
+//             Console.ReadLine();
+
+//         }
+//     }
+
+// ----FOR LOOPS----
+// *keeping track of an iterating variable
+
+namespace giraffe;
+    class Program 
     {
         static void Main(string[] args)
         {
-            string secretWord = "giraffe";
-            string guess = "";
-            int guessCount = 0;
-            int guessLimit = 3;
-            bool outOfGuesses = false;
+            // int i = 1;
+            // while (i <= 5){
+            //     Console.WriteLine(i);
+            //     i++;
+            // }
 
-            while(guess != secretWord && !outOfGuesses)
-            {
-                if(guessCount < guessLimit)
-                {
-                    Console.Write("Enter guess: ");
-                    guess = Console.ReadLine();
-                    guessCount++;
-                } else {
-                    outOfGuesses = true;
-                }
-            }
-            if (outOfGuesses){
-                Console.WriteLine("You Lose!");
-            } else{
-
-            
-            Console.Write("You Win!");
+            int[] luckyNumbers = { 4, 8, 15, 16, 23, 42};
+            for(int i = 0; i < luckyNumbers.Length; i++){
+                Console.WriteLine(luckyNumbers[i]);
             }
             Console.ReadLine();
-
         }
     }
