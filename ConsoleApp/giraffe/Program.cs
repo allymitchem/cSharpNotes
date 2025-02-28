@@ -484,21 +484,45 @@
 // ----FOR LOOPS----
 // *keeping track of an iterating variable
 
+// namespace giraffe;
+//     class Program 
+//     {
+//         static void Main(string[] args)
+//         {
+//             // int i = 1;
+//             // while (i <= 5){
+//             //     Console.WriteLine(i);
+//             //     i++;
+//             // }
+
+//             int[] luckyNumbers = { 4, 8, 15, 16, 23, 42};
+//             for(int i = 0; i < luckyNumbers.Length; i++){
+//                 Console.WriteLine(luckyNumbers[i]);
+//             }
+//             Console.ReadLine();
+//         }
+//     }
+
+// ----BUILDING AN EXPONENT METHOD----
+
 namespace giraffe;
-    class Program 
+
+    class Program
     {
         static void Main(string[] args)
         {
-            // int i = 1;
-            // while (i <= 5){
-            //     Console.WriteLine(i);
-            //     i++;
-            // }
-
-            int[] luckyNumbers = { 4, 8, 15, 16, 23, 42};
-            for(int i = 0; i < luckyNumbers.Length; i++){
-                Console.WriteLine(luckyNumbers[i]);
-            }
+            Console.WriteLine(GetPow(3, 2));
             Console.ReadLine();
+        }
+
+        static int GetPow(int baseNum, int powNum )
+        {
+            int result = 1;
+
+            for(int i = 0; i < powNum; i++)
+            {
+                result = result * baseNum;
+            }
+            return result;
         }
     }
