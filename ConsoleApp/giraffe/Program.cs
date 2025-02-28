@@ -204,7 +204,7 @@
 //             friends[0] = "Jim";
 //             friends[1] = "Kelly";
 //             // ^ manually setting the value of each index
-            
+
 
 //             Console.WriteLine( luckyNumbers[1] );
 
@@ -379,7 +379,7 @@
 //     }
 //     static string GetDay(int dayNum){
 //         string dayName;
-        
+
 //         switch (dayNum)
 //         {
 //             case 0:
@@ -406,8 +406,8 @@
 //             default: //if none of the cases are met
 //                 dayName = "Invalid day number";
 //                 break;
-            
-                
+
+
 //         }
 
 //         return dayName;
@@ -436,12 +436,12 @@
 //         }
 //     }
 
-    // do while loop will execute code until it reads the condition and sees it's false
-    // do
-    // {
-    //     Console.WriteLine(index);
-    //     index++;
-    // } while (Index <= 5);
+// do while loop will execute code until it reads the condition and sees it's false
+// do
+// {
+//     Console.WriteLine(index);
+//     index++;
+// } while (Index <= 5);
 
 
 // ---BUILDING A GUESSING GAME---
@@ -473,7 +473,7 @@
 //                 Console.WriteLine("You Lose!");
 //             } else{
 
-            
+
 //             Console.Write("You Win!");
 //             }
 //             Console.ReadLine();
@@ -505,24 +505,46 @@
 
 // ----BUILDING AN EXPONENT METHOD----
 
-namespace giraffe;
+// namespace giraffe;
 
-    class Program
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             Console.WriteLine(GetPow(3, 2));
+//             Console.ReadLine();
+//         }
+
+//         static int GetPow(int baseNum, int powNum )
+//         {
+//             int result = 1;
+
+//             for(int i = 0; i < powNum; i++)
+//             {
+//                 result = result * baseNum;
+//             }
+//             return result;
+//         }
+//     }
+
+// ---2D ARRAYS---
+// ** Can also have as many elements/dimensions you want, just add more commas in int array
+
+
+namespace giraffe
+{
+    class Program 
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(GetPow(3, 2));
+            int [,] numberGrid = {  //comma is meaning we want to give it a 2 dimensional array
+                {1, 2 },
+                {3, 4 },
+                {5, 6 }
+
+            };
+            Console.WriteLine(numberGrid[0, 0]); //referring to row 0 and column 0
             Console.ReadLine();
         }
-
-        static int GetPow(int baseNum, int powNum )
-        {
-            int result = 1;
-
-            for(int i = 0; i < powNum; i++)
-            {
-                result = result * baseNum;
-            }
-            return result;
-        }
     }
+}
