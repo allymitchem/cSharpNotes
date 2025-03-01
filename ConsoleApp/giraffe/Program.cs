@@ -559,26 +559,60 @@ multiple line comments
 
 // ---EXCEPTION HANDLING---
 
-namespace giraffe;
+// namespace giraffe;
 
-class Program 
-{
-    static void Main(string[] args)
-    {
-        try
-        {
-            Console.Write("Enter a number: ");
-            int num1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter another number: ");
-            int num2 = Convert.ToInt32(Console.ReadLine());
+// class Program 
+// {
+//     static void Main(string[] args)
+//     {
+//         try
+//         {
+//             Console.Write("Enter a number: ");
+//             int num1 = Convert.ToInt32(Console.ReadLine());
+//             Console.Write("Enter another number: ");
+//             int num2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(num1 / num2);
-        } 
-        catch(Exception e) { //can put a specific except like "DivideByZeroException" can create multiple catches => for each individual exception
-            Console.WriteLine(e.Message);
-        }
+//             Console.WriteLine(num1 / num2);
+//         } 
+//         catch(Exception e) { //can put a specific except like "DivideByZeroException" can create multiple catches => for each individual exception
+//             Console.WriteLine(e.Message);
+//         }
+//         finally //going to get executed no matter what
+//         {
+
+//         }
         
 
-        Console.ReadLine();
+//         Console.ReadLine();
+//     }
+// }
+
+// ----CLASSES & OBJECTS----
+// allow you to create your own custom data type
+// a class is a specification for a new data type => model real world entities
+
+//right click on giraffe.. (downloaded c# extensions), click new C# => class and name.cs
+
+namespace giraffe
+{
+    class Program 
+    {
+        static void Main(string[] args)
+        {
+            // object is an instance of a class
+            Book book1 = new Book();
+            book1.title = "Harry Potter";
+            book1.author = "JK Rowling";
+            book1.pages = 400;
+
+            Book book2 = new Book();
+            book2.title = "LOTR";
+            book2.author = "Tolkein";
+            book2.pages = 700;
+
+            Console.WriteLine(book1.title);
+
+            Console.ReadLine();
+        }
     }
 }
