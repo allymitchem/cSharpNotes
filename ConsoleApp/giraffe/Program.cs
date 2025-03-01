@@ -531,20 +531,29 @@
 // ** Can also have as many elements/dimensions you want, just add more commas in int array
 
 
-namespace giraffe
-{
-    class Program 
-    {
-        static void Main(string[] args)
-        {
-            int [,] numberGrid = {  //comma is meaning we want to give it a 2 dimensional array
-                {1, 2 },
-                {3, 4 },
-                {5, 6 }
+// namespace giraffe
+// {
+//     class Program 
+//     {
+//         static void Main(string[] args)
+//         {
+//             int [,] numberGrid = {  //comma is meaning we want to give it a 2 dimensional array
+//                 {1, 2 },
+//                 {3, 4 },
+//                 {5, 6 }
 
-            };
-            Console.WriteLine(numberGrid[0, 0]); //referring to row 0 and column 0
-            Console.ReadLine();
-        }
-    }
-}
+//             };
+//             Console.WriteLine(numberGrid[0, 0]); //referring to row 0 and column 0
+//             Console.ReadLine();
+//         }
+//     }
+// }
+
+// ---comments---
+
+// single line comments
+
+/*
+multiple line comments
+*/
+
