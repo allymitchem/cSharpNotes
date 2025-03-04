@@ -621,28 +621,51 @@ multiple line comments
 
 // * special method that can be put inside of a C# class, which is going to get called whenever we create an object within that class
 
- namespace giraffe
+//  namespace giraffe
+// {
+//     class Program 
+//     {
+//         static void Main(string[] args)
+//         {
+//             // object is an instance of a class
+//             Book book1 = new Book("Harry Potter", "JK Rowling", 400);    //this Book is directly linked to the constructor Book in Book.cs and can pass parameters into it 
+//             // book1.title = "Harry Potter";
+//             // book1.author = "JK Rowling";
+//             // book1.pages = 400;
+
+//             Book book2 = new Book("LOTR", "Tolkein", 700);
+//             // book2.title = "LOTR";
+//             // book2.author = "Tolkein";
+//             // book2.pages = 700;
+
+//             // can also update object => book2.title = " The Hobbit";
+//             Console.WriteLine(book2.title);
+            
+
+//             Console.ReadLine();
+//         }
+//     }
+// }
+
+
+// ---OBJECT METHODS---
+
+// *type of method that we can define inside of our class that the objects of that class can use to either find out information or modify information about themselves
+
+namespace giraffe
 {
     class Program 
     {
         static void Main(string[] args)
         {
-            // object is an instance of a class
-            Book book1 = new Book("Harry Potter", "JK Rowling", 400);    //this Book is directly linked to the constructor Book in Book.cs and can pass parameters into it 
-            // book1.title = "Harry Potter";
-            // book1.author = "JK Rowling";
-            // book1.pages = 400;
+            Student student1 = new Student("Jim", "Business", 2.8);
+            Student student2 = new Student("Pam", "Art", 3.6);
 
-            Book book2 = new Book("LOTR", "Tolkein", 700);
-            // book2.title = "LOTR";
-            // book2.author = "Tolkein";
-            // book2.pages = 700;
-
-            // can also update object => book2.title = " The Hobbit";
-            Console.WriteLine(book2.title);
-            
+            Console.WriteLine(student1.HasHonors());
+            Console.WriteLine(student2.HasHonors());
 
             Console.ReadLine();
+
         }
     }
 }
