@@ -593,24 +593,54 @@ multiple line comments
 
 //right click on giraffe.. (downloaded c# extensions), click new C# => class and name.cs
 
-namespace giraffe
+// namespace giraffe
+// {
+//     class Program 
+//     {
+//         static void Main(string[] args)
+//         {
+//             // object is an instance of a class
+//             Book book1 = new Book();
+//             book1.title = "Harry Potter";
+//             book1.author = "JK Rowling";
+//             book1.pages = 400;
+
+//             Book book2 = new Book();
+//             book2.title = "LOTR";
+//             book2.author = "Tolkein";
+//             book2.pages = 700;
+
+//             Console.WriteLine(book1.title);
+
+//             Console.ReadLine();
+//         }
+//     }
+// }
+
+// ---CONSTRUCTORS---
+
+// * special method that can be put inside of a C# class, which is going to get called whenever we create an object within that class
+
+ namespace giraffe
 {
     class Program 
     {
         static void Main(string[] args)
         {
             // object is an instance of a class
-            Book book1 = new Book();
-            book1.title = "Harry Potter";
-            book1.author = "JK Rowling";
-            book1.pages = 400;
+            Book book1 = new Book("Harry Potter", "JK Rowling", 400);    //this Book is directly linked to the constructor Book in Book.cs and can pass parameters into it 
+            // book1.title = "Harry Potter";
+            // book1.author = "JK Rowling";
+            // book1.pages = 400;
 
-            Book book2 = new Book();
-            book2.title = "LOTR";
-            book2.author = "Tolkein";
-            book2.pages = 700;
+            Book book2 = new Book("LOTR", "Tolkein", 700);
+            // book2.title = "LOTR";
+            // book2.author = "Tolkein";
+            // book2.pages = 700;
 
-            Console.WriteLine(book1.title);
+            // can also update object => book2.title = " The Hobbit";
+            Console.WriteLine(book2.title);
+            
 
             Console.ReadLine();
         }
