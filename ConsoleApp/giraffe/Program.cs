@@ -676,18 +676,38 @@ multiple line comments
 // * makes classes more secure
 
 
+// namespace giraffe 
+// {
+//     class Program 
+//     {
+//         static void Main(string[] args)
+//         {
+            
+//             Movie avengers = new Movie("The Avengers", "Joss Whedon", "PG-13");
+//             Movie shrek = new Movie("Shrek", "Adam Adamson", "PG");
+//             shrek.Rating = "Cat";
+//             Console.WriteLine(shrek.Rating);
+
+//             Console.ReadLine();
+//         }
+//     }
+// }
+
+// ---STATIC CLASS ATTRIBUTES---
+
+// ** static attribute is NOT unique to each of the objects, it's an attribute about the actual class => the same across the entire class
+
 namespace giraffe 
 {
     class Program 
     {
         static void Main(string[] args)
         {
-            
-            Movie avengers = new Movie("The Avengers", "Joss Whedon", "PG-13");
-            Movie shrek = new Movie("Shrek", "Adam Adamson", "PG");
-            shrek.Rating = "Cat";
-            Console.WriteLine(shrek.Rating);
+            Song holiday = new Song("Holiday", "Green Day", 200);
+            Song kashmir = new Song("Kashmir", "Led Zeppelin", 150);
 
+            Console.WriteLine(Song.songCount); //songCount is on the Song class as a whole
+            Console.WriteLine(kashmir.artist);
             Console.ReadLine();
         }
     }
