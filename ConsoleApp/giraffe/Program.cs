@@ -697,17 +697,36 @@ multiple line comments
 
 // ** static attribute is NOT unique to each of the objects, it's an attribute about the actual class => the same across the entire class
 
-namespace giraffe 
+// namespace giraffe 
+// {
+//     class Program 
+//     {
+//         static void Main(string[] args)
+//         {
+//             Song holiday = new Song("Holiday", "Green Day", 200);
+//             Song kashmir = new Song("Kashmir", "Led Zeppelin", 150);
+
+//             Console.WriteLine(Song.songCount); //songCount is on the Song class as a whole
+//             Console.WriteLine(kashmir.artist);
+//             Console.ReadLine();
+//         }
+//     }
+// }
+
+// ---STATIC METHODS & CLASSES---
+
+// ** static method => method that belongs to the class itself => you don't have to create an object for that class in order to use it or access it
+namespace giraffe
 {
-    class Program 
+    class Program
     {
         static void Main(string[] args)
         {
-            Song holiday = new Song("Holiday", "Green Day", 200);
-            Song kashmir = new Song("Kashmir", "Led Zeppelin", 150);
 
-            Console.WriteLine(Song.songCount); //songCount is on the Song class as a whole
-            Console.WriteLine(kashmir.artist);
+            // Console.WriteLine(Math.Sqrt(144));
+            UsefulTools.SayHi("Mike"); 
+            // ** UsefulTools.cs => set up a class specifically for a bunch of static methods to call instead of needing to make multiple instances of a class to use them
+
             Console.ReadLine();
         }
     }
