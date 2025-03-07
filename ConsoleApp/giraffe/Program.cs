@@ -716,18 +716,44 @@ multiple line comments
 // ---STATIC METHODS & CLASSES---
 
 // ** static method => method that belongs to the class itself => you don't have to create an object for that class in order to use it or access it
+// namespace giraffe
+// {
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+
+//             // Console.WriteLine(Math.Sqrt(144));
+//             UsefulTools.SayHi("Mike"); 
+//             // ** UsefulTools.cs => set up a class specifically for a bunch of static methods to call instead of needing to make multiple instances of a class to use them
+
+//             Console.ReadLine();
+//         }
+//     }
+// }
+
+// ---INHERITANCE---
+// * technique we can have on class inherit all the functionality of another class
+// * superclasses and subclasses(inherits from superclass)
+
+
 namespace giraffe
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Chef chef = new Chef();
+            chef.MakeChicken();
+            chef.MakeSpecialDish();
 
-            // Console.WriteLine(Math.Sqrt(144));
-            UsefulTools.SayHi("Mike"); 
-            // ** UsefulTools.cs => set up a class specifically for a bunch of static methods to call instead of needing to make multiple instances of a class to use them
+            ItalianChef italianChef = new ItalianChef();
+            italianChef.MakePasta();
+
+            italianChef.MakeSpecialDish();
 
             Console.ReadLine();
         }
     }
+    
 }
